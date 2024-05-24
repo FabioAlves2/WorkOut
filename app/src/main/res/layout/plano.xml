@@ -53,8 +53,8 @@
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="573dp"
-        android:layout_marginTop="-10dp">
+        android:layout_height="510dp"
+        android:layout_marginTop="-60dp">
 
         <ImageView
             android:layout_width="match_parent"
@@ -351,53 +351,6 @@
                         android:textSize="16sp" />
                 </LinearLayout>
             </RelativeLayout>
-            <RelativeLayout
-                android:id="@+id/ex7"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="13dp"
-                android:background="@drawable/grayer_background">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="10dp"
-                    android:paddingTop="18dp"
-                    android:paddingBottom="18dp"
-                    android:orientation="horizontal">
-
-                    <!-- First TextView -->
-                    <TextView
-                        android:id="@+id/nome7"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="Text 1"
-                        android:textColor="@color/black"
-                        android:textSize="16sp" />
-
-                    <!-- Second TextView -->
-                    <TextView
-                        android:id="@+id/serie7"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Text 2"
-                        android:textColor="@color/black"
-                        android:textSize="16sp" />
-
-                    <!-- Third TextView -->
-                    <TextView
-                        android:id="@+id/reps7"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Text 3"
-                        android:textColor="@color/black"
-                        android:textSize="16sp" />
-                </LinearLayout>
-            </RelativeLayout>
-
             <Button
                 android:id="@+id/comecar"
                 android:layout_width="match_parent"
@@ -419,7 +372,6 @@
         android:background="@android:color/white"
         android:elevation="8dp"
         android:gravity="bottom"
-
         android:orientation="horizontal"
         android:padding="2dp">
 

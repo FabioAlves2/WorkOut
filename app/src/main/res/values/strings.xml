@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">WorkOut</string>
+    <string-array name="Objetivo">
+        <item>Perda de Peso</item>
+        <item>Ganho de Massa Muscular</item>
+        <item>Condicionamento Físico</item>
+    </string-array>
 </resources>

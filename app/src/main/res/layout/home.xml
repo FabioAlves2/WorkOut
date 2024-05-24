@@ -12,6 +12,7 @@
         android:gravity="center_vertical">
 
         <TextView
+            android:id="@+id/olamsg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Olá"
@@ -191,7 +192,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginStart="20dp"/>
     <RelativeLayout
-        android:id="@+id/yellowBackground"
+        android:id="@+id/plano"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/yellow_background"
@@ -437,7 +438,7 @@
     <!-- New Rectangle Background with TextViews and ImageView -->
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="130dp"
         android:layout_marginTop="10dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
@@ -459,20 +460,21 @@
             android:id="@+id/bottomTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Puta que pariu esta pasta que não \n aparece"
-            android:textColor="@color/black"
-            android:textSize="16sp"
-            android:layout_marginStart="10dp"
             android:layout_below="@id/topTextView"
-            android:layout_marginTop="5dp"/>
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="100dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:text="descriçao"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
 
         <!-- ImageView centered on the right side -->
         <ImageView
             android:id="@+id/centeredImageView"
             android:layout_width="70dp"
             android:layout_height="70dp"
-            android:src="@drawable/img_60161"
-            android:background="@drawable/oval_background"
             android:scaleType="centerCrop"
             android:layout_centerVertical="true"
             android:layout_alignParentEnd="true"
@@ -488,7 +490,7 @@
         android:background="@android:color/white"
         android:elevation="8dp"
         android:gravity="bottom"
-        android:layout_marginTop="130dp"
+        android:layout_marginTop="100dp"
         android:orientation="horizontal"
         android:padding="2dp">
 
@@ -496,7 +498,7 @@
         <ImageButton
             android:id="@+id/icon1"
             android:layout_width="0dp"
-            android:layout_height="32dp"
+            android:layout_height="wrap_content"
             android:layout_marginEnd="4dp"
             android:layout_weight="1"
             android:adjustViewBounds="true"

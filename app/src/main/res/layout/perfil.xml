@@ -64,11 +64,12 @@
             android:textColor="@color/black"
             android:textSize="16sp"/>
 
-        <EditText
-            android:id="@+id/nome"
+        <TextView
+            android:id="@+id/unome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="Insira o seu nome"
+            android:text=""
+            android:textColor="@color/black"
             android:layout_gravity="fill_horizontal"
             android:padding="8dp"
             android:textSize="16sp"/>
@@ -82,14 +83,16 @@
             android:padding="8dp"
             android:textSize="16sp"/>
 
-        <EditText
-            android:id="@+id/user"
+        <TextView
+            android:id="@+id/utilizador"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="Insira o seu nome de utilizador"
+            android:text=""
+            android:textColor="@color/black"
             android:layout_gravity="fill_horizontal"
             android:padding="8dp"
             android:textSize="16sp"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -117,16 +120,16 @@
             android:padding="8dp"
             android:textSize="16sp"/>
 
-        <EditText
-            android:id="@+id/data"
+        <TextView
+            android:id="@+id/udata"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="dd/mm/aaaa"
+            android:text=""
+            android:textColor="@color/black"
             android:layout_gravity="fill_horizontal"
-            android:ems="10"
-            android:inputType="date"
             android:padding="8dp"
             android:textSize="16sp"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -136,11 +139,12 @@
             android:padding="8dp"
             android:textSize="16sp"/>
 
-        <EditText
-            android:id="@+id/peso"
+        <TextView
+            android:id="@+id/upeso"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="Insira peso em kg"
+            android:text=""
+            android:textColor="@color/black"
             android:layout_gravity="fill_horizontal"
             android:padding="8dp"
             android:textSize="16sp"/>
@@ -153,42 +157,116 @@
             android:padding="8dp"
             android:textSize="16sp"/>
 
-        <EditText
-            android:id="@+id/altura"
+        <TextView
+            android:id="@+id/ualtura"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="Insira a sua altura em metros"
+            android:text=""
+            android:textColor="@color/black"
             android:layout_gravity="fill_horizontal"
             android:padding="8dp"
             android:textSize="16sp"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Género"
+            android:text="Objetivo"
             android:textColor="@color/black"
             android:layout_gravity="start|center_vertical"
             android:padding="8dp"
             android:textSize="16sp"/>
 
-        <EditText
-            android:id="@+id/genero"
+        <TextView
+            android:id="@+id/uobjetivo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="Feminino/Masculino"
+            android:text=""
+            android:textColor="@color/black"
             android:layout_gravity="fill_horizontal"
             android:padding="8dp"
             android:textSize="16sp"/>
     </GridLayout>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/logout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/black"
         android:textColor="@color/white"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
-        android:layout_marginTop="300dp"
-        android:text="Definir Objetivos" />
+        android:layout_marginTop="280dp"
+        android:text="Logout" />
+
+    <LinearLayout
+        android:id="@+id/navigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:background="@android:color/white"
+        android:elevation="8dp"
+        android:gravity="bottom"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:padding="2dp">
+
+        <!-- First Icon -->
+        <ImageButton
+            android:id="@+id/icon1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:backgroundTint="@color/white"
+            android:scaleType="fitCenter"
+            android:src="@drawable/house_icon" />
+
+        <!-- Second Icon -->
+        <ImageButton
+            android:id="@+id/icon2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:backgroundTint="@color/white"
+            android:scaleType="fitCenter"
+            android:src="@drawable/gym_icon" />
+
+        <!-- Third Icon -->
+        <ImageButton
+            android:id="@+id/icon3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:backgroundTint="@color/white"
+            android:scaleType="fitCenter"
+            android:src="@drawable/forum" />
+
+        <!-- Fourth Icon -->
+        <ImageButton
+            android:id="@+id/icon4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:backgroundTint="@color/white"
+            android:scaleType="fitCenter"
+            android:src="@drawable/graph_icon" />
+
+        <!-- Fifth Icon -->
+        <ImageButton
+            android:id="@+id/icon5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:backgroundTint="@color/white"
+            android:scaleType="fitCenter"
+            android:src="@drawable/account_icon" />
+    </LinearLayout>
 
 </LinearLayout>
