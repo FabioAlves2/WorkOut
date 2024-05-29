@@ -42,6 +42,9 @@ class HomeActivity : ComponentActivity() {
                     binding.olamsg.text="Olá $unome!"
                     val pt = snap.child("Pt").value.toString()
                     Log.d(ContentValues.TAG, "Value is: $pt")
+                    loadPlano(user.uid)
+
+                    //ler qual o pt associado
                     ref.child(pt).get().addOnCompleteListener { task1 ->
                         if (task1.isSuccessful){
                             val snap1 = task1.result
@@ -97,6 +100,46 @@ class HomeActivity : ComponentActivity() {
         binding.icon5.setOnClickListener {
             val intent = Intent(this@HomeActivity, PerfilActivity::class.java)
             startActivity(intent)
+        }
+    }
+
+    private fun loadPlano(userId: String) {
+        uref.child(userId).child("plano").get().addOnCompleteListener { task ->
+            if (task.isSuccessful) {
+                val snap = task.result
+                val planViews = arrayOf(
+                    Triple(binding.ex1, binding.serie1, binding.reps1),
+                    Triple(binding.ex2, binding.serie2, binding.reps2),
+                    Triple(binding.ex3, binding.serie3, binding.reps3),
+                    Triple(binding.ex4, binding.serie4, binding.reps4),
+                    Triple(binding.ex5, binding.serie5, binding.reps5),
+                    Triple(binding.ex6, binding.serie6, binding.reps6)
+                )
+
+                val planIterator = snap.children.iterator()
+                for (i in planViews.indices) {
+                    if (planIterator.hasNext()) {
+                        val planSnapshot = planIterator.next()
+                        val enome = planSnapshot.child("nome").value.toString()
+                        val eseries = planSnapshot.child("series").value.toString()
+                        val ereps = planSnapshot.child("reps").value.toString()
+                        val (exView, serieView, repsView) = planViews[i]
+
+                        exView.text = enome
+                        serieView.text = eseries
+                        repsView.text = ereps
+                    } else {
+                        // Hide the remaining views if there are fewer than 6 plans
+                        val (exView, serieView, repsView) = planViews[i]
+                        exView.text = ""
+                        serieView.text = ""
+                        repsView.text = ""
+                    }
+                }
+            } else {
+                Log.w(ContentValues.TAG, "Failed to read plan data.", task.exception)
+                Toast.makeText(this, "Erro ao carregar planos!", Toast.LENGTH_SHORT).show()
+            }
         }
     }
 }

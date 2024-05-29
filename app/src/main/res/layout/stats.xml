@@ -225,7 +225,7 @@
             android:layout_marginStart="10dp"
             android:layout_marginTop="5dp"
             android:layout_marginEnd="100dp"
-            android:text="descriçao\nfdggsdf"
+            android:text="-----\n-----"
             android:textColor="@color/black"
             android:textSize="16sp" />
 

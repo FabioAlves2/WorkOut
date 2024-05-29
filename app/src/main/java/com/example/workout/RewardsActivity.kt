@@ -30,6 +30,7 @@ class RewardsActivity : ComponentActivity() {
         getreward("reward2",binding.nome2,binding.desc2,binding.img2)
         getreward("reward3",binding.nome3,binding.desc3,binding.img3)
         getreward("reward4",binding.nome4,binding.desc4,binding.img4)
+        getreward("reward5",binding.nome5,binding.desc5,binding.img5)
         setContentView(binding.root)
 
 
@@ -53,8 +54,6 @@ class RewardsActivity : ComponentActivity() {
             val intent = Intent(this@RewardsActivity, PerfilActivity::class.java)
             startActivity(intent)
         }
-
-
     }
 
     private fun getreward(rew: String, rnome: TextView, rdescri: TextView, rimg: ImageView) {
@@ -68,14 +67,13 @@ class RewardsActivity : ComponentActivity() {
                 val img = snap.child("img").value.toString()
                 rnome.text=nome
                 rdescri.text="Por $pontos pontos recebe $descri."
-                if(img=="rew1"){
-                    rimg.setImageResource(R.drawable.pt1)
-                } else if(img =="rew2"){
-                    rimg.setImageResource(R.drawable.pt2)
-                } else if(img =="rew3"){
-                    rimg.setImageResource(R.drawable.pt3)
-                } else{
-                    rimg.setImageResource(R.drawable.plano1)
+                when (img) {
+                    "mensalidade" -> rimg.setImageResource(R.drawable.mensalidade)
+                    "desconto" -> rimg.setImageResource(R.drawable.desconto)
+                    "creatina" -> rimg.setImageResource(R.drawable.creatina)
+                    "barrinhas" -> rimg.setImageResource(R.drawable.barrinhas)
+                    "garrafa" -> rimg.setImageResource(R.drawable.garrafa)
+                    else -> rimg.setImageResource(R.drawable.garrafa)
                 }
 
             } else {

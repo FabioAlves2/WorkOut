@@ -27,6 +27,7 @@
             android:layout_weight="1"/>
 
         <TextView
+            android:id="@+id/exercicio"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
@@ -47,9 +48,10 @@
         android:background="@drawable/line"/>
 
     <ImageView
+        android:id="@+id/imagem"
         android:layout_width="match_parent"
         android:layout_height="232dp"
-        android:src="@drawable/ex1" />
+        android:src="@drawable/agachamento" />
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -67,7 +69,7 @@
             android:clickable="true"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="20dp"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp">
 
@@ -123,7 +125,7 @@
             android:clickable="true"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="260dp"
+            android:layout_marginTop="300dp"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp">
 
