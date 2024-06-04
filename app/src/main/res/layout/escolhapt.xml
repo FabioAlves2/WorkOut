@@ -233,6 +233,7 @@
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:background="@drawable/oval_background"
+            android:src="@drawable/pt4"
             android:scaleType="centerCrop"
             android:layout_centerVertical="true"
             android:layout_alignParentEnd="true"

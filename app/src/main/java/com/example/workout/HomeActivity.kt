@@ -58,8 +58,10 @@ class HomeActivity : ComponentActivity() {
                                     binding.centeredImageView.setImageResource(R.drawable.pt1)
                                 }else if (img == "pt2"){
                                     binding.centeredImageView.setImageResource(R.drawable.pt2)
-                                }else{
+                                }else if (img == "pt3"){
                                     binding.centeredImageView.setImageResource(R.drawable.pt3)
+                                }else{
+                                    binding.centeredImageView.setImageResource(R.drawable.pt4)
                                 }
 
                             }else{
