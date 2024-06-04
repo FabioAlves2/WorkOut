@@ -107,6 +107,18 @@
             android:label="@string/app_name"
             android:theme="@style/Theme.WorkOut">
         </activity>
+        <activity
+            android:name=".WithdrawnActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.WorkOut">
+        </activity>
+        <activity
+            android:name=".PtPerfilActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.WorkOut">
+        </activity>
     </application>
 
 </manifest>

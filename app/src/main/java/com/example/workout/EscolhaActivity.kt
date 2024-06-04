@@ -36,6 +36,9 @@ class EscolhaActivity : ComponentActivity() {
         uref = database.getReference("Utilizadores")
 
         definirPT("sK8uE8r0GVV9lIy83kXU7nC1NnA3",binding.Nome1,binding.habli1)
+        definirPT("B37mGifrVxbddUbhXC9DFJE0XHh2",binding.nome2,binding.habli2)
+        definirPT("uSri7VJVT7S3mLhvhOowixmxcVo2",binding.nome3,binding.habli3)
+        definirPT("FTwIxjbrRyUDjVi6CanblXjaiA53",binding.nome4,binding.habli4)
         setContentView(binding.root)
 
         binding.pt1.setOnClickListener{
@@ -43,6 +46,33 @@ class EscolhaActivity : ComponentActivity() {
                 Log.d(TAG, "O utilizador ${user.uid} selecionou o PT 1.")
                 uref.child(user.uid).child("Pt").setValue("sK8uE8r0GVV9lIy83kXU7nC1NnA3")
                 definircliente("sK8uE8r0GVV9lIy83kXU7nC1NnA3",user.uid)
+            }
+            val intent = Intent(this@EscolhaActivity, HomeActivity::class.java)
+            startActivity(intent)
+        }
+        binding.pt2.setOnClickListener{
+            if (user != null) {
+                Log.d(TAG, "O utilizador ${user.uid} selecionou o PT 2.")
+                uref.child(user.uid).child("Pt").setValue("B37mGifrVxbddUbhXC9DFJE0XHh2")
+                definircliente("B37mGifrVxbddUbhXC9DFJE0XHh2",user.uid)
+            }
+            val intent = Intent(this@EscolhaActivity, HomeActivity::class.java)
+            startActivity(intent)
+        }
+        binding.pt3.setOnClickListener{
+            if (user != null) {
+                Log.d(TAG, "O utilizador ${user.uid} selecionou o PT 3.")
+                uref.child(user.uid).child("Pt").setValue("uSri7VJVT7S3mLhvhOowixmxcVo2")
+                definircliente("uSri7VJVT7S3mLhvhOowixmxcVo2",user.uid)
+            }
+            val intent = Intent(this@EscolhaActivity, HomeActivity::class.java)
+            startActivity(intent)
+        }
+        binding.pt4.setOnClickListener{
+            if (user != null) {
+                Log.d(TAG, "O utilizador ${user.uid} selecionou o PT 4.")
+                uref.child(user.uid).child("Pt").setValue("FTwIxjbrRyUDjVi6CanblXjaiA53")
+                definircliente("FTwIxjbrRyUDjVi6CanblXjaiA53",user.uid)
             }
             val intent = Intent(this@EscolhaActivity, HomeActivity::class.java)
             startActivity(intent)

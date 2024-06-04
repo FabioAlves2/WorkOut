@@ -30,7 +30,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
-            android:layout_marginEnd="135dp"
+            android:layout_marginEnd="85dp"
             android:textAlignment="center"
             android:layout_marginStart="40dp"
             android:text="Escolha um Personal Trainer"
@@ -271,7 +271,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="30dp"
         android:background="@color/black"
-        android:text="Continuar sem Personal"
+        android:text="Continuar sem Personal Trainer"
         android:textColor="@color/white" />
 
 </LinearLayout>

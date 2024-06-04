@@ -81,11 +81,16 @@ class PtHomeActivity : ComponentActivity() {
             intent.putExtra("cliente",cliente1)
             startActivity(intent)
         }
+        binding.cliente2.setOnClickListener {
+            val intent = Intent(this@PtHomeActivity, ClienteActivity::class.java)
+            intent.putExtra("cliente",cliente2)
+            startActivity(intent)
+        }
 
         setContentView(binding.root)
 
         binding.icon5.setOnClickListener {
-            val intent = Intent(this@PtHomeActivity, PerfilActivity::class.java)
+            val intent = Intent(this@PtHomeActivity, PtPerfilActivity::class.java)
             startActivity(intent)
         }
 

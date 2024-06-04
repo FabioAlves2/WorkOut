@@ -64,14 +64,17 @@ class ClienteActivity : ComponentActivity() {
                 uref.child(id).child("plano").child(exercicio).child("series").setValue(series)
                 uref.child(id).child("plano").child(exercicio).child("reps").setValue(reps)
             }
+            binding.exercicio.text.clear()
+            binding.series.text.clear()
+            binding.repeticao.text.clear()
         }
         binding.icon1.setOnClickListener{
-            val intent = Intent(this@ClienteActivity, HomeActivity::class.java)
+            val intent = Intent(this@ClienteActivity, PtHomeActivity::class.java)
             startActivity(intent)
         }
 
         binding.icon5.setOnClickListener {
-            val intent = Intent(this@ClienteActivity, PerfilActivity::class.java)
+            val intent = Intent(this@ClienteActivity, PtPerfilActivity::class.java)
             startActivity(intent)
         }
 

@@ -107,14 +107,14 @@
         <ImageView
             android:id="@+id/image"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
+            android:layout_height="130dp"
             android:src="@drawable/desafio"
             android:scaleType="centerCrop" />
 
         <ImageView
             android:id="@+id/background"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
+            android:layout_height="180dp"
             android:layout_below="@id/image"
             android:layout_marginTop="-10dp"
             android:scaleType="centerCrop"
@@ -129,7 +129,7 @@
             android:padding="5dp"
             android:textSize="20sp"
             android:textStyle="bold"
-            android:text="Desafio 1"
+            android:text="Desafio de Corrida"
             android:textColor="@color/black" />
 
         <TextView
@@ -139,7 +139,7 @@
             android:layout_below="@+id/text"
             android:layout_alignStart="@id/background"
             android:padding="10dp"
-            android:text="Desafio 1"
+            android:text="Durante o mês de junho, corra todos os dias e junte o máximo de km possíveis para receber um dos nossos prémios."
             android:textColor="@color/black"
             android:textSize="16sp"/>
         <Button
@@ -164,14 +164,14 @@
         <ImageView
             android:id="@+id/image2"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
+            android:layout_height="130dp"
             android:src="@drawable/plano1"
             android:scaleType="centerCrop" />
 
         <ImageView
             android:id="@+id/background2"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
+            android:layout_height="180dp"
             android:layout_below="@id/image2"
             android:layout_marginTop="-10dp"
             android:scaleType="centerCrop"
@@ -186,7 +186,7 @@
             android:padding="5dp"
             android:textSize="20sp"
             android:textStyle="bold"
-            android:text="Desafio 1"
+            android:text="Desafio de Pernas"
             android:textColor="@color/black" />
 
         <TextView
@@ -196,7 +196,7 @@
             android:layout_below="@+id/text3"
             android:layout_alignStart="@id/background2"
             android:padding="10dp"
-            android:text="Desafio 1"
+            android:text="De 2 a 8 de junho, junte o máximo de repetições na extensora para receber um dos nossos prémios."
             android:textColor="@color/black"
             android:textSize="16sp"/>
         <Button
@@ -220,7 +220,7 @@
         android:background="@android:color/white"
         android:elevation="8dp"
         android:gravity="bottom"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="10dp"
         android:orientation="horizontal"
         android:padding="2dp">
 

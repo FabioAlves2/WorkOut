@@ -61,7 +61,7 @@ Treinar e ganhar num único local."
         android:textSize="16sp" />
 
     <RelativeLayout
-        android:id="@+id/pt1"
+        android:id="@+id/rew1"
         android:clickable="true"
         android:layout_width="match_parent"
         android:layout_height="100dp"
@@ -110,7 +110,7 @@ Treinar e ganhar num único local."
             android:layout_marginEnd="10dp"/>
     </RelativeLayout>
     <RelativeLayout
-        android:id="@+id/pt2"
+        android:id="@+id/rew2"
         android:clickable="true"
         android:layout_width="match_parent"
         android:layout_height="100dp"
@@ -159,7 +159,7 @@ Treinar e ganhar num único local."
             android:layout_marginEnd="10dp"/>
     </RelativeLayout>
     <RelativeLayout
-        android:id="@+id/pt3"
+        android:id="@+id/rew3"
         android:clickable="true"
         android:layout_width="match_parent"
         android:layout_height="120dp"
@@ -208,7 +208,7 @@ Treinar e ganhar num único local."
             android:layout_marginEnd="10dp"/>
     </RelativeLayout>
     <RelativeLayout
-        android:id="@+id/pt4"
+        android:id="@+id/rew4"
         android:clickable="true"
         android:layout_width="match_parent"
         android:layout_height="120dp"
@@ -257,7 +257,7 @@ Treinar e ganhar num único local."
             android:layout_marginEnd="10dp"/>
     </RelativeLayout>
     <RelativeLayout
-        android:id="@+id/pt5"
+        android:id="@+id/rew5"
         android:clickable="true"
         android:layout_width="match_parent"
         android:layout_height="100dp"
